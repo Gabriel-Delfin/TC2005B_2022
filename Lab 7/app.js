@@ -18,12 +18,16 @@ for (let item of arreglo) {
 }
 
 
-const http = require('http');
+const http = require('http'); // se corre con "localhost:3000"
 
 const server = http.createServer( (request, response) => {
+    //Obtener la URL de la petición
     console.log(request.url);
+    //Obtener la IP de la petición
+    console.log(request.socket.remoteAddress);
+
     response.setHeader('Content-Type', 'text/html');
-    response.write("");
+    response.write("<h1>Hola mundo desde node!</h1>");
     response.end();
 });
 
