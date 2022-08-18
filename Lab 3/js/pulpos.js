@@ -119,3 +119,9 @@ boton.onclick = () => {
     document.getElementById("contenedor_imagen").innerHTML = 
         '<img src="media/pulpo.jpg" alt="Imagen de un pulpo enojado">';
 }
+
+const boton_cambio_animo = document.getElementById("cambiar_animo");
+
+boton_cambio_animo.onclick= () => {
+    console.log("Funciona el botón de cambio de ánimo")
+}
