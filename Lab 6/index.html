@@ -1,24 +1,33 @@
 <!DOCTYPE html>
+<!--Info. personal-->
+<!--Luis Gabriel Delfín Paulín A01701482-->
+<!--Lab 6-->
 <html>
 <head>
-    <title>Lab 1</title>
+    <title>Hide / Lab 6</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>LABORATORIO 6</h1>
-    <br>
-    <img src = "media/TecM.jpeg" width = "200"/> 
-    <!--Info. personal-->
-    <p>Luis Gabriel Delfín Paulín <br> A01701482 <br> A01701482@tec.mx <br> 08/08/2022 </p>
-    <hr>
-    <!--Aquí empieza el Lab 6-->
-    <b>Valida tu contraseña</b>
+<div class="login">
+    <h1>Login</h1>
+    <div class="datos">
+        <label for="email">Email</label>
+        <input id="email" placeholder="test@gmail.com">
 
-    <br>
-    <p>Escribe tu contraseña actual</p>
+    </div>
+    <div class="datos">
+        <label for="contrasena1">Contrasena</label>
+        <input id="contrasena1" type="password" placeholder="Contrasena">
 
-    <br>
-    <p>Confirma tu contraseña</p>
+    </div>
+    <div class="datos">
+        <label for="contrasena2">Repite tu contrasena</label>
+        <input id="contrasena2" type="password" placeholder="Confirmar contrasena">
 
-
+    </div>
+    <!-- <button type="button" class="login_btn">Sign in</button> -->
+    <input type="button" class="login_btn" onclick="repiteCon()" value="Sign in"> 
+</div>
+<script src="password.js"></script>
 </body>
 </html>
