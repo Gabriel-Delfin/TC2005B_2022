@@ -4,30 +4,33 @@
 <!--Lab 6-->
 <html>
 <head>
-    <title>Hide / Lab 6</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="password.js"></script>
 </head>
 <body>
-<div class="login">
-    <h1>Login</h1>
-    <div class="datos">
-        <label for="email">Email</label>
-        <input id="email" placeholder="test@gmail.com">
+    <div class="login">
+        <h1>Login</h1>
+        <!--Correo-->
+        <div class="datos">
+            <label for="email">Email</label>
+            <input id="email" placeholder="test@gmail.com">
 
-    </div>
-    <div class="datos">
-        <label for="contrasena1">Contrasena</label>
-        <input id="contrasena1" type="password" placeholder="Contrasena">
+        <!--Contrasena-->
+        </div>
+        <div class="datos">
+            <label for="contrasena1">Contrasena</label>
+            <input id="contrasena1" type="password" placeholder="Contrasena">
 
-    </div>
-    <div class="datos">
-        <label for="contrasena2">Repite tu contrasena</label>
-        <input id="contrasena2" type="password" placeholder="Confirmar contrasena">
+        <!--Confirmar contrasena-->
+        </div>
+        <div class="datos">
+            <label for="contrasena2">Repite tu contrasena</label>
+            <input id="contrasena2" type="password" placeholder="Confirmar contrasena">
 
+        <!--Boton-->
+        </div>
+        <input type="button" class="login_btn" onclick="repiteCon()" value="Sign in"> 
     </div>
-    <!-- <button type="button" class="login_btn">Sign in</button> -->
-    <input type="button" class="login_btn" onclick="repiteCon()" value="Sign in"> 
-</div>
-<script src="password.js"></script>
 </body>
 </html>
